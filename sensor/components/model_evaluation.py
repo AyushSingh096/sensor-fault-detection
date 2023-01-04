@@ -20,10 +20,9 @@ class ModelEvaluation:
                 model_trainer_artifact:ModelTrainerArtifact):
         
         try:
-            self.model_eval_config = model_eval_config,
-            self.data_validation_artifact = data_validation_artifact,
+            self.model_eval_config = model_eval_config
+            self.data_validation_artifact = data_validation_artifact
             self.model_trainer_artifact = model_trainer_artifact
-
         except Exception as e:
             raise SensorException(e,sys)
 
@@ -43,7 +42,7 @@ class ModelEvaluation:
 
             train_model_file_path = self.model_trainer_artifact.trained_model_file_path
             model_resolver = ModelResolver() 
-            is_model_accepted = True
+            is_model_accepted=True
 
             if not model_resolver.is_model_exists():
                 model_evaluation_artifact = ModelEvaluationArtifact(
