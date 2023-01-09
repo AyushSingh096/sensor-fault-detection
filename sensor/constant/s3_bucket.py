@@ -1,2 +1,2 @@
-TRAINING_BUCKET_NAME = "sensor-model"
-PREDICT_BUCKET_NAME = "sensor-datasource"
+TRAINING_BUCKET_NAME = "sensor-training-pipeline-ayush"
+PREDICT_BUCKET_NAME = "sensor-datasource-ayush"
